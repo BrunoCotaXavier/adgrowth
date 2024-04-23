@@ -22,7 +22,7 @@ export const AboutMe = () => {
                             <span className='text-sm sm:text-base'>
                                 Com uma trajetória marcada por três anos de experiência no <span className='secondColor font-bold'>Google Brasil</span>,
                                 tive a honra de colaborar com grandes e médias empresas, incluindo nomes como <span className='secondColor font-bold'> Petrobras,
-                                Serpro e Canal Combate</span>. Atualmente, sou sócio de uma das agências de marketing em mais rápida ascensão no Brasil.
+                                    Serpro e Canal Combate</span>. Atualmente, sou sócio de uma das agências de marketing em mais rápida ascensão no Brasil.
                             </span>
                         </div>
                         <div className='flex-1 pb-5'>
@@ -36,7 +36,7 @@ export const AboutMe = () => {
                         <div className='flex-1 pb-10'>
                             <span className='text-sm sm:text-base'>
                                 Juntos, vamos traçar o caminho para o sucesso do seu negócio, utilizando <span className='secondColor font-bold'>estratégias
-                                personalizadas</span> e dados orientados para performance. Estou aqui para ajudá-lo a alcançar e
+                                    personalizadas</span> e dados orientados para performance. Estou aqui para ajudá-lo a alcançar e
                                 superar seus objetivos comerciais.
                             </span>
                         </div>
