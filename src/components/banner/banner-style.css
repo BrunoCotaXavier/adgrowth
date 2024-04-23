@@ -1,0 +1,13 @@
+.btnSuccess {
+    background-color: #16B011;
+    width: 119px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.btnAbout {
+    width: 170px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid white;
+}
