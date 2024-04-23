@@ -1,5 +1,5 @@
 export const Customers = () => {
-    return(
+    return (
         <div className="firstColor">
             Ola customers
         </div>

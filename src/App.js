@@ -6,9 +6,9 @@ import { MainComponent } from './components/main';
 function App() {
   return (
     <div className="App">
-        <Header/>
-        <BannerComponent/>
-        <MainComponent/>
+      <Header />
+      <BannerComponent />
+      <MainComponent />
     </div>
   );
 }

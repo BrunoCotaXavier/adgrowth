@@ -4,8 +4,8 @@ import { Customers } from "../../screens/customers";
 export const MainComponent = () => {
     return (
         <div>
-            <AboutMe/>
-            <Customers/>
+            <AboutMe />
+            <Customers />
         </div>
     );
 }
