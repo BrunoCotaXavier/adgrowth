@@ -5,7 +5,7 @@ export const AboutMe = () => {
         <div className="h-full bg-black">
             <div className='flex flex-col justify-center items-center'>
                 <div>
-                    <h1 className="text-white text-40 max-w-450 leading-none text-center josefin-sans pt-10 pb-20">O <span className='firstColor'>responsável</span> por trás da AdGrowth Marketing.</h1>
+                    <h1 className="text-white text-40 max-w-450 leading-none text-center comfortaa pt-40 pb-20">O <span className='firstColor'>responsável</span> por trás da AdGrowth Marketing.</h1>
                 </div>
                 <div className="cardAbout bg-white h-full max-w-580 m-5 p-10">
                     <div className='flex pb-10'>
@@ -19,7 +19,7 @@ export const AboutMe = () => {
                     </div>
                     <div className='flex flex-col h-2/3 justify-between'>
                         <div className='flex-1 pb-5'>
-                            <span className='text-sm sm:text-base'>
+                            <span className='text-sm sm:text-base '>
                                 Com uma trajetória marcada por três anos de experiência no <span className='secondColor font-bold'>Google Brasil</span>,
                                 tive a honra de colaborar com grandes e médias empresas, incluindo nomes como <span className='secondColor font-bold'> Petrobras,
                                     Serpro e Canal Combate</span>. Atualmente, sou sócio de uma das agências de marketing em mais rápida ascensão no Brasil.

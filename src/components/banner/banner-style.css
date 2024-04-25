@@ -1,5 +1,5 @@
 .btnSuccess {
-    background-color: #16B011;
+    background-color: #D91010;
     width: 119px;
     height: 40px;
     border-radius: 100px;
@@ -10,4 +10,5 @@
     height: 40px;
     border-radius: 100px;
     border: 1px solid white;
+    background-color: black;
 }
