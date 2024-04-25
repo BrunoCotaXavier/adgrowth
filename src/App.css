@@ -5,11 +5,30 @@
   font-style: normal;
 }
 
+.comfortaa {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .firstColor {
     color: #D91010;
+}
+
+.backgroundfirstColor {
+    background-color: #D91010;
 }
 
 .secondColor {
     color: #575A89;
 }
 
+.greenColor {
+  color: #08AC65;
+}
+
+span, h1, h2, h3, p {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
