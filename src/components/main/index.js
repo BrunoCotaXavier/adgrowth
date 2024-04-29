@@ -1,14 +1,23 @@
 import { AboutMe } from "../../screens/aboutMe";
+import { BrandStrategy } from "../../screens/brandStrategy";
 import { Customers } from "../../screens/customers";
+import { Filter } from "../../screens/filter";
+import { Methodology } from "../../screens/methodology";
+import { Offer } from "../../screens/offer";
+import { SalesStrategy } from "../../screens/salesStrategy";
+import { Social } from "../../screens/social";
 
 export const MainComponent = () => {
     return (
         <div>
             <AboutMe />
             <Customers />
-            <div className="w-screen h-full bg-black pt-40">
-                <img className="h-auto w-full" src="./images/bannerSocial.png" />
-            </div>
+            <Social />
+            <Methodology />
+            <BrandStrategy />
+            <SalesStrategy />
+            <Filter />
+            <Offer />
         </div>
     );
 }
