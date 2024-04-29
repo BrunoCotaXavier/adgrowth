@@ -32,3 +32,28 @@ span, h1, h2, h3, p {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+.gradient {
+  background: linear-gradient(
+    to bottom,
+    #151515, /* cor inicial */
+    #0C0C0C 73%, /* cor intermediária a 73% */
+    #000000 /* cor final */
+  );
+}
+.gradient-left {
+  background: linear-gradient(
+    to left,
+    #151515, /* cor inicial */
+    #0C0C0C 73%, /* cor intermediária a 73% */
+    #000000 /* cor final */
+  );
+}
+.gradient-right {
+  background: linear-gradient(
+    to right,
+    #151515, /* cor inicial */
+    #0C0C0C 73%, /* cor intermediária a 73% */
+    #000000 /* cor final */
+  );
+}

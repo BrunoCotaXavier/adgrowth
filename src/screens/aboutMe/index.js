@@ -2,10 +2,10 @@ import './aboutMe-style.css'
 
 export const AboutMe = () => {
     return (
-        <div className="h-full bg-black">
+        <div className="h-full bg-black pt-20 p-5">
             <div className='flex flex-col justify-center items-center'>
                 <div>
-                    <h1 className="text-white text-40 max-w-450 leading-none text-center comfortaa pt-40 pb-20">O <span className='firstColor'>responsável</span> por trás da AdGrowth Marketing.</h1>
+                    <h1 className="text-white sm:text-40 text-25 max-w-450 leading-none text-center comfortaa pb-5">O <span className='firstColor'>Responsável</span> por trás da AdGrowth Marketing.</h1>
                 </div>
                 <div className="cardAbout bg-white h-full max-w-580 m-5 p-10">
                     <div className='flex pb-10'>
