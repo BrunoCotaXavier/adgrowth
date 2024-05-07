@@ -1,6 +1,6 @@
 export const BrandStrategy = () => {
     return (
-        <div className="p-10 flex sm:flex-row flex-col justify-center items-center gradient-right">
+        <div id="brand" className="p-10 flex sm:flex-row flex-col justify-center items-center gradient-right">
             <div className="w-full flex justify-center">
                 <img src="/images/brand.png"/>
             </div>

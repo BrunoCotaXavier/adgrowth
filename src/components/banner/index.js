@@ -7,13 +7,17 @@ export const BannerComponent = () => {
             <div className="relative flex flex-col justify-center items-center">
                 <div className="flex justify-center">
                     <div className="flex flex-col pb-10">
-                        <h1 className="text-white font-bold max-w-400 sm:max-w-580 text-left pb-5 text-50 sm:text-67 leading-none">Aumente <br/> sua receita incremental</h1>
+                        <h1 className="text-white font-bold max-w-400 sm:max-w-580 text-left pb-5 text-50 sm:text-67 leading-none">Aumente <br /> sua receita incremental</h1>
                         <h2 className="text-white max-w-400 sm:max-w-580 text-left text-sm"><span className='font-bold'>TORNE-SE O Nº1 NO GOOGLE</span> E AUMENTE SUA RELEVÂNCIA NAS REDES SOCIAIS </h2>
                     </div>
                 </div>
                 <div className="flex space-x-4 ">
-                    <button className="text-white btnSuccess">INICIAR</button>
-                    <button className="text-white btnAbout">LER SOBRE</button>
+                    <a href='/#form'>
+                        <button className="text-white btnSuccess">INICIAR</button>
+                    </a>
+                    <a href='/#brand'>
+                        <button className="text-white btnAbout">LER SOBRE</button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -20,9 +20,9 @@ export const AboutMe = () => {
                     <div className='flex flex-col h-2/3 justify-between'>
                         <div className='flex-1 pb-5'>
                             <span className='text-sm sm:text-base '>
-                                Com uma trajetória marcada por três anos de experiência no <span className='secondColor font-bold'>Google Brasil</span>,
-                                tive a honra de colaborar com grandes e médias empresas, incluindo nomes como <span className='secondColor font-bold'> Petrobras,
-                                    Serpro e Canal Combate</span>. Atualmente, sou sócio de uma das agências de marketing em mais rápida ascensão no Brasil.
+                                formado em economia pela Universidade Paulista, tive o privilegio em ter trabalhado durante 3 anos no <span className='secondColor font-bold'>Google Brasil</span>,
+                                atendendo grandes e médias empresas, incluindo nomes como <span className='secondColor font-bold'> Petrobras,
+                                Serpro e Canal Combate</span>. Atualmente, sou sócio de uma das agências de marketing em mais rápida ascensão no Brasil.
                             </span>
                         </div>
                         <div className='flex-1 pb-5'>

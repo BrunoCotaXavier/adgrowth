@@ -6,6 +6,7 @@ import { Methodology } from "../../screens/methodology";
 import { Offer } from "../../screens/offer";
 import { SalesStrategy } from "../../screens/salesStrategy";
 import { Social } from "../../screens/social";
+import { FormSpree } from "../form";
 
 export const MainComponent = () => {
     return (
@@ -18,6 +19,7 @@ export const MainComponent = () => {
             <SalesStrategy />
             <Filter />
             <Offer />
+            <FormSpree/>
         </div>
     );
 }

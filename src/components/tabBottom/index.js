@@ -10,7 +10,7 @@ export const TabBottom = () => {
                 </a>
             </div>
             <div>
-                <span><a target="_blank" href="https://neohubble.com">Política de Privacidade |</a> © 2024 - Todos os direitos reservados AdGrowth Marketing</span>
+                <span><a target="_blank" href="https://docs.google.com/document/d/1gZMimYc_z1QUFQE8aBRLXGR1hH_SDNJEpI66R0vqHec/edit">Política de Privacidade |</a> © 2024 - Todos os direitos reservados AdGrowth Marketing</span>
             </div>
         </div>
     );
