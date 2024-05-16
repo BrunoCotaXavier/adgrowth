@@ -1,3 +1,4 @@
+import { BtnStart } from '../btnStart';
 import './banner-style.css'
 
 export const BannerComponent = () => {
@@ -12,10 +13,8 @@ export const BannerComponent = () => {
                     </div>
                 </div>
                 <div className="flex space-x-4 ">
-                    <a href='/#form'>
-                        <button className="text-white btnSuccess">INICIAR</button>
-                    </a>
-                    <a href='/#brand'>
+                    <BtnStart />
+                    <a href='/#funil'>
                         <button className="text-white btnAbout">LER SOBRE</button>
                     </a>
                 </div>

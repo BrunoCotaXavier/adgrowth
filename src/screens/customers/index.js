@@ -1,3 +1,5 @@
+import { BtnStart } from "../../components/btnStart";
+
 export const Customers = () => {
     return (
         <div className="bg-black h-fll w-full text-white flex flex-col items-center justify-center pt-10">
@@ -28,19 +30,19 @@ export const Customers = () => {
                 </div>
 
             </div>
-            <div className="flex w-full sm:flex-row flex-col pb-20 pl-20 pr-20">
-                <div class="sm:p-20 p-7 w-full h-auto flex justify-center">
-                    <img className="absolute" src="./images/rectangle.png"/>
-                    <span className="firstColor relative pr-5 pt-5">+120</span> <span className="relative pt-5 pl-2"><span className="font-bold">Empresas</span> Atendidas </span>
+            <div className="flex sm:flex-row flex-col sm:pl-40 sm:pr-40 sm:pt-10 justify-between w-full p-10">
+                <div className="gradient p-5 rounded mb-10">
+                    <span className="firstColor relative pr-5 pt-5">+120</span> <span className="relative pr-5 pl-2"><span className="font-bold">Empresas</span> Atendidas </span>
                 </div>
-                <div class="sm:p-20 p-7 w-full h-auto flex justify-center">
-                    <img className="absolute" src="./images/rectangle.png" />
-                    <span className="firstColor relative pr-5 pt-5">+5</span> <span className="relative pt-5 pl-2"><span className="font-bold">Milhões</span> de Reais</span>
+                <div className="gradient p-5 rounded mb-10 ">
+                    <span className="firstColor relative pr-5 pt-5">+5</span> <span className="relative pr-5 pl-2"><span className="font-bold">Milhões</span> de Reais</span>
                 </div>
-                <div class="sm:p-20 p-7 w-full h-auto flex justify-center">
-                    <img className="absolute" src="./images/rectangle.png" />
-                    <span className="firstColor relative pr-5 pt-5">+4</span> <span className="relative pt-5 pl-2"><span className="font-bold">Anos</span> de Expêriencia </span>
+                <div className="gradient p-5 rounded mb-10">
+                    <span className="firstColor relative pr-5 pt-5">+4</span> <span className="relative pr-5 pl-2"><span className="font-bold">Anos</span> de Expêriencia </span>
                 </div>
+            </div>
+            <div className="pb-10">
+                <BtnStart />
             </div>
         </div>
     );

@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { BtnStart } from '../btnStart';
 
 export const FormSpree = () => {
     const formRef = useRef(null);
@@ -12,6 +13,14 @@ export const FormSpree = () => {
         setPage(2);
         notViewCard(); // vai para a próxima página de perguntas
     };
+
+
+    const setMsgWhats = () => {
+        const element = document.getElementById('msgWhatsApp')
+        if (element) {
+            element.classList.remove('hidden')
+        }
+    }
 
     const viewCard = () => {
         const element = document.getElementById('msgCard');
@@ -43,12 +52,10 @@ export const FormSpree = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log('Formulário enviado');
         const form = formRef.current;
         const status = statusRef.current;
         const data = new FormData(form);
 
-        // Submissão assíncrona do formulário
         try {
             const response = await fetch(form.action, {
                 method: form.method,
@@ -59,11 +66,12 @@ export const FormSpree = () => {
             });
 
             if (response.ok) {
-                status.textContent = "Email enviado com sucesso, obrigado pela preferencia!";
+                status.textContent = "Email enviado com sucesso, obrigado pela preferência!";
                 form.reset();
                 setPage(1);
-                viewCard(); // volta para a primeira página após a submissão
+                viewCard();
                 notViewForm();
+                setMsgWhats();
             } else {
                 const responseData = await response.json();
                 setPage(1);
@@ -81,7 +89,6 @@ export const FormSpree = () => {
         }
     };
 
-    // Verifique se o estado mudou
     useEffect(() => {
         console.log('Page updated:', page);
     }, [page]);
@@ -94,44 +101,45 @@ export const FormSpree = () => {
             <div id='msgCard' className='text-center  sm:text-25 hidden'>
                 <p ref={statusRef} id="my-form-status" className='text-black'></p>
             </div>
+            <a target='_blank' href="https://wa.link/zzn2od" id='msgWhatsApp' className='flex text-center pt-5 hidden'>
+                <h1 className='sm:text-xl pt-1'>- Entre em contato agora.</h1>
+                <img width={30} height={30} className='pl-1' src='/images/whatsLogo.svg' />
+            </a>
             <form
                 id="formSpree"
                 ref={formRef}
-                action="https://formspree.io/f/xbjnqbwy"
+                action="https://formspree.io/f/xoqgrzaj"
                 method="POST"
                 onSubmit={handleSubmit}
             >
                 <div className='flex w-full flex-col max-w-400'>
-                    <p className='text-gray-500'>- Seus dados</p>
+                    <p className='text-gray-500'>- Sobre a empresa</p>
                     <div className='p-2'>
-                        <input className='p-1 w-333 border-2 rounded' type="text" placeholder="Nome:" name="nome" />
+                        <input className='p-1 w-333 border-2 arredondado' placeholder="Nome da empresa:" name="empresa" />
                     </div>
                     <div className='p-2'>
-                        <input className='p-1 w-333 border-2 rounded' type="email" placeholder="E-mail:" name="email" />
+                        <input className='p-1 w-333 border-2 arredondado' type='link' placeholder="Site:" name="site" />
                     </div>
                     <div className='p-2'>
-                        <input className='p-1 w-333 border-2 rounded' type="number" placeholder="Celular:" name="telefone" />
+                        <input className='p-1 w-333 border-2 arredondado' type='link' placeholder="Instagram:" name="instagram" />
                     </div>
                 </div>
 
                 {page === 2 && (
                     <div className='flex w-full flex-col max-w-400'>
-                        <p className='text-gray-500 pt-5'>- Sobre a empresa</p>
+                        <p className='text-gray-500 pt-5'>- Seus dados</p>
                         <div className='p-2'>
-                            <input className='p-1 w-333 border-2 arredondado' placeholder="Nome da empresa:" name="empresa" />
+                            <input className='p-1 w-333 border-2 rounded' type="text" placeholder="Nome:" name="nome" />
                         </div>
                         <div className='p-2'>
-                            <input className='p-1 w-333 border-2 arredondado' placeholder="Qual segmento:" name="segmento" />
+                            <input className='p-1 w-333 border-2 rounded' type="email" placeholder="E-mail:" name="email" />
                         </div>
                         <div className='p-2'>
-                            <input className='p-1 w-333 border-2 arredondado' type='link' placeholder="Site:" name="site" />
-                        </div>
-                        <div className='p-2'>
-                            <input className='p-1 w-333 border-2 arredondado' type='link' placeholder="Instagram:" name="instagram" />
+                            <input className='p-1 w-333 border-2 rounded' type="number" placeholder="Celular:" name="telefone" />
                         </div>
                         <div className='flex flex-col'>
                             <span className='text-center text-gray-800 pt-2 max-w-333'>
-                                Você está disposto a investir US$ 700/month com a melhor agência?
+                                Você está disposto a investir em média US$ 200/weekly com a melhor agência?
                             </span>
                             <div className='flex justify-center items-center pt-2'>
                                 <input type="radio" id="sim" name="transport" value="sim" />
@@ -152,7 +160,7 @@ export const FormSpree = () => {
                         <a href='#/form'>
                             <button className='btnSuccess text-white' type="submit">Enviar</button>
                         </a>
-                        <button className='btnAbout btnSuccess text-white ml-5' onClick={() => setPage(1)}>Voltar</button>
+                        <button className='btnAbout text-white ml-5' onClick={() => setPage(1)}>Voltar</button>
                     </div>
                 )}
             </form>

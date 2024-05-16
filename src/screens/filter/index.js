@@ -1,6 +1,6 @@
 export const Filter = () => {
     return (
-        <div className="p-10 pt-10 flex sm:flex-row flex-col justify-center items-center gradient-left">
+        <div id="funil" className="p-10 pt-10 flex sm:flex-row flex-col justify-center items-center gradient-left">
             <div className="w-full flex justify-center">
                 <img src="/images/funil.png" />
             </div>
