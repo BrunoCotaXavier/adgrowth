@@ -27,6 +27,14 @@
   color: #08AC65;
 }
 
+.btnSuccessForm {
+  background-color: #D91010;
+  width: max-content;
+  padding: 10px;
+  height: 40px;
+  border-radius: 100px;
+}
+
 span, h1, h2, h3, p {
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
