@@ -14,9 +14,6 @@ export const BannerComponent = () => {
                 </div>
                 <div className="flex space-x-4 ">
                     <BtnStart />
-                    <a href='/#funil'>
-                        <button className="text-white btnAbout">LER SOBRE</button>
-                    </a>
                 </div>
             </div>
         </div>

@@ -1,7 +1,12 @@
 export const BtnStart = () => {
     return (
-        <a href='/#form'>
-            <button className="text-white btnSuccess">INICIAR</button>
-        </a>
+        <div>
+            <a href='/#form' className="pr-5">
+                <button className="text-white btnSuccess">INICIAR</button>
+            </a>
+            <a href='/#funil'>
+                <button className="text-white btnAbout">LER SOBRE</button>
+            </a>
+        </div>
     );
 }

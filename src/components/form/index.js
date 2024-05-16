@@ -101,7 +101,7 @@ export const FormSpree = () => {
             <div id='msgCard' className='text-center  text-xl sm:text-25'>
                 <p ref={statusRef} id="my-form-status" className='font-bold greenColor'></p>
             </div>
-            <a target='_blank' href="https://wa.link/zzn2od" id='msgWhatsApp' className='mt-5 text-white btnSuccessForm flex text-center items-center justify-center'>
+            <a target='_blank' href="https://wa.link/zzn2od" id='msgWhatsApp' className='hidden mt-5 text-white btnSuccessForm flex text-center items-center justify-center'>
                 <h1 className='sm:text-xl pt-1 font-bold '>Entre em contato agora</h1>
                 <img width={30} height={30} className='pl-1' src='/images/whatsLogo.svg' />
             </a>
